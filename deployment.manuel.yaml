@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hdoev-web-admin-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hdoev-web-admin
+  template:
+    metadata:
+      labels:
+        app: hdoev-web-admin
+    spec:
+      containers:
+        - name: hdoev-web-admin
+          image: 230483255586.dkr.ecr.ap-northeast-2.amazonaws.com/hdoev-web-admin:test-sean
+          ports:
+            - containerPort: 3000

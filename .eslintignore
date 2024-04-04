@@ -1,0 +1,5 @@
+src/reportWebVitals.ts
+src/react-app-env.d.ts
+.vscode
+dist
+node_modules

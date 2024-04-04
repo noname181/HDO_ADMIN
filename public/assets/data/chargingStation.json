@@ -1,0 +1,18 @@
+[
+  {
+    "chgs_id": "55",
+    "chgs_station_id": "53030002",
+    "chgs_name": "서울남부주유소",
+    "org": {
+      "category": "STT_DIR",
+      "area": "서울",
+      "branch": "서울남부"
+    },
+    "chgs_operator_manager_id": "홍길동",
+    "chgs_standard": "0대",
+    "chgs_rapidity": "1대",
+    "chgs_car_wash_yn": true,
+    "chgs_aff_only": "카카오 T",
+    "createdAt": "정산일"
+  }
+]

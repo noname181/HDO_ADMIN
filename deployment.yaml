@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hdoev-web-admin-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hdoev-web-admin
+  template:
+    metadata:
+      labels:
+        app: hdoev-web-admin
+    spec:
+      containers:
+        - name: hdoev-web-admin
+          image: AWS_ECR_URI
+          resources:
+            requests:
+              memory: 3000Mi
+            limits:
+              memory: 3000Mi
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DATE
+              value: 'DATE_STRING'
+            - name: TZ
+              value: "Asia/Seoul"

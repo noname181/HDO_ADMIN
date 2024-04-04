@@ -1,0 +1,186 @@
+/* 공통클래스 */
+.text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .align-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aui-grid {
+    font-family: 'Pretendard', sans-serif;
+    color: #191919;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  .fixed {
+    position: fixed !important;
+    z-index: 100000 !important;
+  }
+  
+  /* table content */
+  .aui-grid-default-column {
+    position: relative !important;
+    background-color: #fff;
+    cursor: default;
+  }
+  .aui-grid-body-panel .aui-grid-table tr td,
+  .aui-grid .aui-textinputer {
+    color: var(--gray-400);
+    border: 0;
+    border-bottom: 1px solid #dce0e3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    padding: 0 10px;
+    height: 100%;
+  }
+  .aui-grid-body-panel .aui-grid-table tr td:hover {
+    background-color: #fff;
+    color: var(--gray-400);
+  }
+  
+  /* table header */
+  .aui-grid-default-header,
+  .aui-grid-row-check-header {
+    background: var(--gray-100);
+  }
+  .aui-grid-renderer-base.aui-grid-header-renderer {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: var(--dark-default);
+    padding: 0px 10px;
+    background-color: var(--gray-100);
+  }
+  .aui-grid-header-panel .aui-grid-table tr td {
+    border-top: 1px solid #dce0e3;
+    border-bottom: 1px solid #dce0e3;
+  }
+  
+  /* 스크롤바 */
+  /* .aui-vscrollbar {
+    display: none !important;
+  } */
+  
+  /* 셀력션 대표 백그라운드 스타일 */
+  .aui-grid-selection-bg {
+    background: transparent;
+  }
+  
+  /* 셀렉션의 대표 셀 보더(테두리) 색상 스타일*/
+  .aui-grid-selection-cell-border-lines {
+    background: none;
+  }
+  
+  .aui-grid-selection-bg {
+    background: var(--btn-gray-100) !important;
+    color: var(--blue-200) !important;
+    font-weight: 500 !important;
+  }
+  
+  /* .aui-grid-selection-header-column .aui-grid-renderer-base {
+    background: var(--gray-200) !important;
+    color: var(--blue-200) !important;
+  } */
+  
+  .select-header {
+    & .aui-grid-renderer-base {
+      background: var(--gray-200);
+      color: var(--blue-200);
+    }
+  }
+  
+  /* selectionMode: 'multipleRows' */
+  .aui-grid-selection-row-bg {
+    background: var(--btn-gray-100) !important;
+    /* color: var(--blue-200) !important; */
+    /* font-weight: 500 !important; */
+    
+    
+  }
+  .aui-grid-selection-row-others-bg {
+    background: var(--btn-gray-100) !important;
+  }
+  /* .aui-grid-selection-row-others-bg:first-child {
+    background: var(--gray-200) !important;
+    color: var(--blue-200) !important;
+    font-weight: 500 !important;
+  } */
+  
+  .aui-grid-button-renderer {
+    padding: 0px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--dark-default) !important;
+    background-color: var(--white) !important;
+    border: 1px solid var(--btn-gray-300) !important;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  /* .aui-grid-button-renderer:hover {
+    background: transparent;
+  } */
+  
+  /* 노데이터 메세지 레이어*/
+  .aui-grid-nodata-msg-layer {
+    background: none;
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    box-sizing: content-box;
+  }
+  .aui-grid-row-background,
+  .aui-grid-extra-checked-row {
+    background: #fff;
+}
+.aui-grid-body-panel .aui-grid-table tr td, .aui-grid .aui-textinputer {
+  height: 40px;
+}
+& .aui-grid .aui-grid-table td input[type='checkbox'] {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 4px !important;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+  transition: background-color 0.15s ease-in-out,
+    background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+.aui-grid .aui-grid-table td input[type='checkbox']:checked {
+  background-color: var(--blue-200);
+  border: 1px solid var(--blue-200) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.aui-grid .aui-grid-table td input[type='checkbox']:disabled {
+  background-color: #f8f8f8 !important;
+  border-color: #d1d1d1 !important;
+  transition: background-color 0.15s ease-in-out,
+    background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.aui-grid-link-renderer > a {
+  color: #484848;
+  text-underline-offset: 3px;
+  line-height: 18px;
+}
+.aui-grid-fixed-column-rule {
+  display: none;
+}
+.aui-grid-header-panel .aui-grid-table tr td {
+  border-right: 0;
+}

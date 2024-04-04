@@ -1,0 +1,23 @@
+{
+  "cSpell.words": [
+    "ALLNC",
+    "chgs",
+    "chrg",
+    "fullname",
+    "geocode",
+    "gubun",
+    "kepco",
+    "odby"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"    },
+    "git.allowForcePush": true,    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"    },
+    "[json]": {        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnSave": true
+}
