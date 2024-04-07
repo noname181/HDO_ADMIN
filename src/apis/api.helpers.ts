@@ -13,10 +13,10 @@ if (
   hostname === 'localhost' ||
   hostname === '127.0.0.1'
 ) {
-  defaultApiAddress = protocol == 'https:' ? 'http://158.247.249.66:8080' : 'http://lhthuong.top:8080';
+  defaultApiAddress = protocol == 'https:' ? 'https://api.lhthuong.top' : 'http://api.lhthuong.top';
   // 'http://localhost:8080';
 } else {
-  defaultApiAddress = protocol == 'https:' ? 'http://158.247.249.66:8080' : 'http://lhthuong.top:8080';
+  defaultApiAddress = protocol == 'https:' ? 'https://api.lhthuong.top' : 'http://api.lhthuong.top';
 }
 
 export const defaultUrl = defaultApiAddress;
