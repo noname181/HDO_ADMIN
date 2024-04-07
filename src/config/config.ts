@@ -11,8 +11,8 @@ export const configuration = (): IConfig => {
     baseHdoUrl:
       process.env.BASE_HDO_URL ||
       (protocol === 'https:'
-        ? 'https://api.lhthuong.top'
-        : 'http://api.lhthuong.top'),
+        ? 'https://hdoapi.lhthuong.top'
+        : 'http://hdoapi.lhthuong.top'),
     // baseHdoUrl: process.env.BASE_HDO_URL || 'http://localhost:8080',
   };
 };
