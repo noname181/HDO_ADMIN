@@ -15,7 +15,7 @@
     "git.allowForcePush": true,    "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"    },
     "terminal.integrated.defaultProfile.windows": "Git Bash",    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"    },
+        "editor.defaultFormatter": "vscode.typescript-language-features"    },
     "[json]": {        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",

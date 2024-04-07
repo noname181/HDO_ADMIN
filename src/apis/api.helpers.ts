@@ -3,7 +3,7 @@
 let defaultApiAddress: string;
 
 const hostname = window.location.hostname;
-
+const protocol = window.location.protocol;
 if (
   // hostname === 'celmeety.com' ||
   // hostname === 'www.celmeety.com' ||
@@ -13,10 +13,10 @@ if (
   hostname === 'localhost' ||
   hostname === '127.0.0.1'
 ) {
-  defaultApiAddress = 'https://api.abc7979.net';
+  defaultApiAddress = protocol == 'https:' ? 'http://158.247.249.66:8080' : 'http://lhthuong.top:8080';
   // 'http://localhost:8080';
 } else {
-  defaultApiAddress = 'https://api.abc7979.net';
+  defaultApiAddress = protocol == 'https:' ? 'http://158.247.249.66:8080' : 'http://lhthuong.top:8080';
 }
 
 export const defaultUrl = defaultApiAddress;
